@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Debugger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Regex Debugger</h1>
+        <div class="input-section">
+            <div class="input-group">
+                <label for="regex-pattern">Regular Expression:</label>
+                <input type="text" id="regex-pattern" placeholder="Enter regex pattern">
+            </div>
+            <div class="input-group">
+                <label for="test-string">Test String:</label>
+                <input type="text" id="test-string" placeholder="Enter test string">
+            </div>
+            <div class="button-group">
+                <button id="test-regex-btn">Test Regex</button>
+                <button id="clear-btn">Clear</button>
+                <button id="randomize-btn">Randomize</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <h2>Results</h2>
+            <div id="matches-output"></div>
+            <div id="explanation-output"></div>
+        </div>
+        <div class="history-section">
+            <h2>Regex History</h2>
+            <div id="history-list"></div>
+            <div class="history-buttons">
+                <button id="clear-history-btn">Clear History</button>
+            </div>
+        </div>
+    </div>
+    <script src="regex-debugger.js"></script>
+</body>
+</html>

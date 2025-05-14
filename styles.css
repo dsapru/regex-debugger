@@ -1,0 +1,341 @@
+body {
+    font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4285f4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.2);
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #3367d6;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.random-description {
+    background-color: #e8f0fe;
+    border-left: 4px solid #4285f4;
+    padding: 15px;
+    margin: 15px 0;
+    color: #333;
+    border-radius: 0 6px 6px 0;
+    animation: fadeIn 0.5s ease;
+}
+
+.random-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #4285f4;
+    font-weight: 500;
+}
+
+.random-header svg {
+    margin-right: 8px;
+}
+
+.pattern-preview {
+    margin-top: 10px;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(66, 133, 244, 0.2);
+}
+
+.pattern-preview code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    color: #ea4335;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#clear-btn {
+    background-color: #5f6368;
+}
+
+#clear-btn:hover {
+    background-color: #494c50;
+}
+
+#randomize-btn {
+    background-color: #34a853;
+}
+
+#randomize-btn:hover {
+    background-color: #2d9144;
+}
+
+.output-section {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.output-section h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.output-section h3 {
+    color: #4285f4;
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    font-weight: 500;
+}
+
+#matches-output, #explanation-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-top: 15px;
+    line-height: 1.6;
+    border-left: 4px solid #fbbc04;
+}
+
+.explanation-content strong {
+    color: #ea4335;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.no-matches {
+    background-color: #feefc3;
+    padding: 12px 15px;
+    border-radius: 6px;
+    color: #b06000;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.error {
+    background-color: #fce8e6;
+    padding: 12px 15px;
+    border-radius: 6px;
+    color: #ea4335;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.match {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #4285f4;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.match:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.match p {
+    margin: 8px 0;
+}
+
+.match p:first-child {
+    font-weight: 500;
+    color: #4285f4;
+    font-size: 1.05rem;
+}
+
+.context {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.context code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    padding: 2px 0;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.index-badge {
+    display: inline-block;
+    background-color: #e8f0fe;
+    color: #4285f4;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.groups {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.group-item {
+    background-color: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.group-item code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    background-color: #e8f0fe;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #4285f4;
+}
+
+.history-section {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.history-section h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+#history-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.history-entry {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.history-entry:hover {
+    transform: translateY(-2px);
+}
+
+.history-entry p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.history-entry p:first-child {
+    font-weight: 500;
+    color: #4285f4;
+}
+
+.load-history-btn, .delete-history-btn {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+.load-history-btn {
+    background-color: #4285f4;
+}
+
+.delete-history-btn {
+    background-color: #ea4335;
+}
+
+.delete-history-btn:hover {
+    background-color: #d33426;
+}
