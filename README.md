@@ -2,7 +2,7 @@
 
 A modern, interactive web tool to test, analyze, and learn regular expressions with a clean, intuitive interface.
 
-![Regex Debugger](https://i.imgur.com/placeholder.png)
+https://regex-pattern-tester.windsurf.build/
 
 ## Features
 
